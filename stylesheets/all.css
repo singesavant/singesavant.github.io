@@ -1,40 +1,107 @@
+@font-face {
+  font-family: 'Gidole Regular';
+  src: url('../fonts/Gidole.woff') format('woff'), url('../fonts/Gidole.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Base*/
 body {
-  color: #BCBCBB;
   background-color: #1D1D1B;
+  color: #BCBCBB;
+
+  font-family: 'Gidole Regular';
+  font-size: 1.5em;
   margin: 0;
 }
 
+/*Layout*/
+.container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  text-align: center;
+}
+
+/*Home*/
+.tags-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+  text-align: center;
+}
+
+.tags-list li  {
+  letter-spacing: 2px;
+}
+
 @media screen and (min-width: 700px) {
+  /*Layout*/
   .only-small {
     display: none;
   }
 
-  .banner {
-    position: absolute;
-    width:100%;
-    height:100%;
-    display: flex;
-    justify-content: center;
+  .container {
+    justify-content: space-around;
   }
 
-  .banner img {
-    height: 100%;
+  /*Home*/
+  .section.logo {
+    margin-top: 1em;
+  }
+
+  .section.tags {
+    margin-bottom: 1em;
+  }
+
+  .monkey-img, .title-img {
+    max-width: 55%;
+  }
+
+  .tags-list {
+    width: 80vh;
   }
 }
 
 @media screen and (max-width: 700px) {
+  /*Layout*/
   .only-desktop {
     display: none;
   }
 
-  .banner {
-    width: 100%;
-    min-height:100%;
-    margin: 2em 0;
-    text-align: center;
+  /*Home*/
+  .section {
+    margin-bottom: 2em;
   }
 
-  .banner img {
+  .section.logo {
+    margin-top: 2em;
+  }
+
+  .section a {
+    margin: 1em;
+    width: 100%;
+  }
+
+  .monkey-img {
+    max-width: 65%;
+  }
+
+  .title-img {
     max-width: 80%;
+  }
+
+  .tags-list {
+    flex-direction: column;
+    padding-bottom: 2em;
   }
 }
