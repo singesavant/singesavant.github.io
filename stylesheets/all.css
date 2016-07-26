@@ -1,16 +1,9 @@
-@font-face {
-  font-family: 'Gidole Regular';
-  src: url('../fonts/Gidole.woff') format('woff'), url('../fonts/Gidole.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*Base*/
 body {
   background-color: #1D1D1B;
   color: #BCBCBB;
 
-  font-family: 'Gidole Regular';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5em;
   margin: 0;
 }
@@ -29,9 +22,58 @@ body {
 }
 
 /*Home*/
+.section.brewery-name a,
+.section.brewery-name a:visited {
+  margin: 0;
+  color: #BCBCBB;
+  text-decoration: none;
+}
+
+.section.brewery-name h1 {
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.1em;
+}
+
+.section.brewery-name p {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+
+  overflow: hidden;
+  text-align: center;
+}
+
+.section.brewery-name span {
+  display: inline-block;
+  padding: 0 0.8em;
+  position: relative;
+}
+
+.section.brewery-name span:before,
+.section.brewery-name span:after {
+  background: #BCBCBB;
+  content: "";
+  display: block;
+  height: 0.08em;
+  position: absolute;
+  top: 50%;
+  width: 400%;
+}
+
+.section.brewery-name span:before { right: 100%; }
+.section.brewery-name span:after  { left: 100%;  }
+
+.section.tags {
+  width: 100%;
+}
+
 .tags-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   padding: 0;
   margin: 0;
@@ -42,6 +84,10 @@ body {
 
 .tags-list li  {
   letter-spacing: 2px;
+}
+
+.tags-list .dot {
+  padding: 0 1em;
 }
 
 @media screen and (min-width: 700px) {
@@ -59,16 +105,18 @@ body {
     margin-top: 1em;
   }
 
+  .section.brewery-name {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
   .section.tags {
     margin-bottom: 1em;
   }
 
-  .monkey-img, .title-img {
+  .monkey-img {
     max-width: 55%;
-  }
-
-  .tags-list {
-    width: 80vh;
   }
 }
 
@@ -80,24 +128,32 @@ body {
 
   /*Home*/
   .section {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+  }
+
+  .section a {
+    width: 100%;
   }
 
   .section.logo {
     margin-top: 2em;
   }
 
-  .section a {
-    margin: 1em;
-    width: 100%;
+  .section.brewery-name {
+    padding: 0 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .section.brewery-name h1 {
+    font-size: 1.5em;
+  }
+
+  .section.brewery-name p {
+    font-size: 0.8em;
   }
 
   .monkey-img {
     max-width: 65%;
-  }
-
-  .title-img {
-    max-width: 80%;
   }
 
   .tags-list {
