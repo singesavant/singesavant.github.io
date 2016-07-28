@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'Gidole Regular';
+  src: url('../fonts/Gidole.woff') format('woff'), url('../fonts/Gidole.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*Base*/
 body {
   background-color: #1D1D1B;
+  font-family: 'Gidole Regular', 'Helvetica', 'Arial', sans-serif;
   color: #BCBCBB;
 
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5em;
   margin: 0;
 }
