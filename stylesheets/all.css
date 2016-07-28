@@ -116,6 +116,33 @@ a, a:visited {
   padding: 0 1em;
 }
 
+/*Page -- 404*/
+.page-not-found .section.logo {
+  text-align: center;
+}
+
+.section.not-found {
+  padding: 0 1em;
+}
+
+.section.not-found h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section.not-found p {
+  margin-top: 0;
+}
+
+.section.not-found a,
+.section.not-found a:visited {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em;
+}
+
 @media screen and (min-width: 700px) {
   /*Layout*/
   .only-small {
@@ -143,6 +170,12 @@ a, a:visited {
 
   .monkey-img {
     max-width: 55%;
+  }
+
+  /*Page -- 404*/
+  .page-not-found .container {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -180,6 +213,15 @@ a, a:visited {
 
   .tags-list {
     flex-direction: column;
+    padding-bottom: 2em;
+  }
+
+  /*Page -- 404*/
+  .page-not-found .section {
+    text-align: center;
+  }
+
+  .page-not-found .section.not-found {
     padding-bottom: 2em;
   }
 }
