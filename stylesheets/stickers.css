@@ -1,0 +1,40 @@
+#map-header {
+    position: absolute;
+    z-index: 1000;
+    right: 20px;
+    top: 20px;
+    width: 200px;
+    background-color: #eee;
+    border: #00132C solid 2px;
+    padding: 5px;
+    
+    text-align: center;
+
+    font-size: 10px;
+
+    color: #00132C;
+}
+
+#map-header > a {
+    color: #00132C;
+    font-weight: bold;
+}
+
+#map-header > img {
+    text-align: center;
+
+}
+
+#map-header > h1 {
+    font-variant: small-caps;
+    color: #00132C;
+    font-size: 12px;
+    display: inline;
+    text-align: center;
+}
+
+#map-header > h1 > a {
+    color: #00132C;
+}
+
+

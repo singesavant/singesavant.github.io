@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stickers du singe savant : attrapez les tous !</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="../stylesheets/all.css" />
+	<link rel="stylesheet" href="../stylesheets/stickers.css" />
+</head>
+<body style="margin: 0px; padding: 0px;">
+
+    <div id="map-header">
+        <img src="../images/sticker-icon.png" height="50px"></img>
+        <br/>
+        <h1>Les stickers du <a href="http://singe-savant.com">Singe-Savant</a> : attrapez-les tous !</h1>
+        <br/>
+        Les stickers se sont cachés dans ces lieux : entrez et demandez pour en attraper un !<br/> N'oubliez pas que vous pouvez nous soumettre vos meilleures photos sur <a href="https://www.facebook.com/brasserie.singe.savant/">Facebook</a>... <strong>3 bouteilles d'IPA en avant-première à la clé !</strong> :-)
+    </div>
+
+	<div id="map" style="width: 100%; height: 100%; position: absolute;"></div>
+
+	<script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+	<script>
+		var map = L.map('map').setView([50.6330, 3.0612], 14);
+
+		L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+			attribution: '&copy; Le Singe Savant, 2016'
+		}).addTo(map);
+
+		var LeafIcon = L.Icon.extend({
+			options: {
+				iconSize:     [40, 40],
+				iconAnchor:   [20, 20],
+				popupAnchor:  [0, -20]
+			}
+		});
+
+		var stickerIcon = new LeafIcon({iconUrl: '../images/sticker-icon.png'});
+
+	 L.marker([50.6277985, 3.0575889], {icon: stickerIcon}).bindPopup("La Boulangerie").addTo(map);
+	 L.marker([50.6293841, 3.0542011], {icon: stickerIcon}).bindPopup("Les Mains dans le Guidon").addTo(map);
+	 L.marker([50.62928, 3.06973], {icon: stickerIcon}).bindPopup("La Coroutine").addTo(map);
+	 L.marker([50.6310673, 3.0500399], {icon: stickerIcon}).bindPopup("Les Six Roses").addTo(map);
+	 L.marker([50.6262889, 3.0659911], {icon: stickerIcon}).bindPopup("Le Verlaine").addTo(map);
+
+
+	</script>
+</body>
+</html>
+
