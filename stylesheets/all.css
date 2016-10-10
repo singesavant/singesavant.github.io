@@ -32,6 +32,16 @@ a, a:visited {
   background-color: #C14E3A;
 }
 
+.link-cta, .link-cta:visited {
+  color: #D06F5A;
+  text-decoration: none;
+}
+
+.link-cta:hover {
+  color: #C14E3A;
+  text-decoration: underline;
+}
+
 /*Layout*/
 .container {
   height: 100vh;
