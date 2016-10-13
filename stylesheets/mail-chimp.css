@@ -1,0 +1,65 @@
+#mc_embed_signup
+{
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+}
+
+#mc-email {
+    width: 30%;
+    font-size: 0.8em;
+    font-family: 'Gidole Regular', 'Helvetica', 'Arial', sans-serif;
+    padding: 17px;
+    border: none;
+    border-radius: 2px;
+}
+
+#mc-embedded-subscribe {
+    display: inline;
+}
+
+#mc-embedded-subscribe {
+    margin: 0 0 0 0;
+}
+
+#mc-embedded-subscribe {
+    background-color: #D06F5A;
+    text-decoration: none;
+    display: inline-block;
+    color: #EFEEE3;
+    padding: 12px;
+    border: 2px solid #D06F5A;
+    font-size: 0.8em;
+    border-radius: 2px;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.mailchimp {
+    padding-bottom: 20px;
+}
+.mce_inline_error {
+    font-size: 0.7em;
+    color: #D06F5A;
+}
+
+#mce-error-response {
+    font-size: 0.7em;
+    color: #D06F5A;
+}
+
+#mce-success-response {
+    font-size: 0.7em;
+    color: #8ccba3;
+}
+
+#intro-mail {
+    width: 56%;
+    margin-left: 23%;
+}
+
+#separator {
+    text-align: center;
+    color: white;
+    margin-top: 0.9em;
+}
