@@ -172,10 +172,11 @@ a, a:visited {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 1em;
   }
 
   .section.tags {
-    margin-bottom: 1em;
+    padding-bottom: 0.9em
   }
 
   .monkey-img {
