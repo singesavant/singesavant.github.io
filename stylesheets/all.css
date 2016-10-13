@@ -176,6 +176,7 @@ a, a:visited {
   }
 
   .section.tags {
+    padding-bottom: 0.9em
   }
 
   .monkey-img {
