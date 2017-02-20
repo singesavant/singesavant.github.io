@@ -1,133 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href='stylesheets/all.css' rel='stylesheet'>
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/mail-chimp.css" rel='stylesheet'>
-    <link href="stylesheets/bootstrap.css" rel='stylesheet'>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Brasserie du Singe Savant, Lille</title>
+        <link rel="stylesheet" href="stylesheets/bootstrap-reboot.css" />
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" />
+        <link rel="stylesheet" href="stylesheets/bootstrap-grid.css" />
+        <link rel="stylesheet" href="stylesheets/main.css" />
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container-flex">
+
+            <!-- first block, the showcase -->
+            <div class="showcase row">
+                <!-- sidebar left -->
+                <div id="sidebar-left" class="sidebar col-sm-1">
+                    <div class="vert-container">
+                    <p>
+                        HOME
+                    </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+
+                    <!-- top menus -->
+                    <div class="row header">
+                        <!-- Left menu -->
+                        <div class="col-sm-3">
+                            <img id="main-logo" src="images/logo.png" alt="Le Singe Savant" width="40%">
+                        </div>
+
+                        <!-- main menu -->
+                        <div id="menu-column" class="col-sm-6">
+                            <ul class="toolbar" id="menu">
+                                <li class="home"><a href="#">Home</a></li>
+                                <li class="beers"><a href="#">Bières</a></li>
+                                <li class="brewery"><a href="#">Brasserie</a></li>
+                                <li class="brewlab"><a href="#">Brewlab</a></li>
+                                <li class="recycling"><a href="#">Recyclage</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- right menu -->
+                        <div class="col-sm-3">
+                            <ul class="toolbar" id="right-menu">
+                                <li class="shop"><a href="#">Shop</a></li>
+                                <li class="contact"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- showcase -->
+                    <div class="row align-items-end">
+                        <div class="beer col-sm-3">
+                            <img src="images/showcase_hopshot.png">
+                            <button class="lightning-button">Rupture !</button>
+                        </div>
+
+                        <div class="col-sm-6 hero">
+                            <img src="images/hero_lss.png">
+                        </div>
+
+                        <div class="shop col-sm-3">
+                            <img src="images/showcase_shop.png">
+
+                            <p>
+                                Ouverture bientôt !
+                                <span>En attendant, </span>
+                            </p>
+
+                            <button class="lightning-button">shop</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- sidebar right -->
+                <div id="sidebar-right" class="sidebar col-sm-1">
+                    <div class="vert-container">
+                    <p>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Untapped</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </p>
+                    </div>
+                </div>
 
 
-    <!-- Display -->
-    <meta charset="utf-8" />
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" /><link href="http://www.singe-savant.com/" rel="canonical">
-
-    <!-- Default Metas -->
-    <title>Le Singe Savant, brasserie urbaine à Lille</title>
-    <meta name="description" content="Le Singe Savant est une nano-brasserie urbaine, un brewlab (espace de co-brassage) et un brewshop ; le tout au coeur de Lille.">
-
-    <!-- Geocoding -->
-    <meta content="Lille, Nord" name="geo.placename" />
-    <meta content="50.629250;3.057256" name="geo.position" />
-    <meta content="FR-59" name="geo.region" />
-
-    <!-- Facebook Open Graph data -->
-    <meta property="og:title" content="Le Singe Savant, brasserie urbaine à Lille" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.singe-savant.com/" />
-    <meta property="og:image" content="http://www.singe-savant.com/images/meta-banner.jpg" />
-    <meta property="og:description" content="Le Singe Savant est une nano-brasserie urbaine, un brewlab (espace de co-brassage) et un brewshop ; le tout au coeur de Lille." />
-    <meta property="og:site_name" content="Le Singe Savant, brasserie urbaine à Lille" />
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@singesavantbrew">
-    <meta name="twitter:title" content="Le Singe Savant, brasserie urbaine à Lille">
-    <meta name="twitter:description" content="Le Singe Savant est une nano-brasserie urbaine, un brewlab (espace de co-brassage) et un brewshop ; le tout au coeur de Lille.">
-    <meta name="twitter:creator" content="@singesavantbrew">
-    <meta name="twitter:image:src" content="http://www.singe-savant.com/images/meta-banner.jpg">
-
-    <!-- Microdata / Google+ Schema.org markup -->
-    <meta itemprop="name" content="Le Singe Savant, brasserie urbaine à Lille">
-    <meta itemprop="description" content="Le Singe Savant est une nano-brasserie urbaine, un brewlab (espace de co-brassage) et un brewshop ; le tout au coeur de Lille.">
-    <meta itemprop="image" content="http://www.singe-savant.com/images/meta-banner.jpg">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#092E41">
-    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#092E41">
-  </head>
-  <body class="page-home">
-    <div class="container">
-      <div class="section logo">
-        <a href="https://www.facebook.com/brasserie.singe.savant">
-          <img src="images/logo-white.png" alt="Le Singe Savant, brasserie urbaine" class="monkey-img">
-        </a>
-      </div>
-
-      <div class="section brewery-name">
-        <a href="https://www.facebook.com/brasserie.singe.savant">
-          <p><span>Lille</span></p>
-          <h1>Le Singe Savant</h1>
-          <p><span>Brasserie urbaine</span></p>
-        </a>
-      </div>
-
-      <!--<div class="section">
-        <a href="https://preco.singe-savant.com/catalogue/pre-commande-hop-shot-ipa_3/" class="link-cta">
-          Les pré-commandes de la <strong>HOP SHOT IPA</strong> <i>Beta</i> sont ouvertes, GO ! &rarr;
-        </a>
-      </div>-->
-
-        <div class="section tags">
-        <ul class="tags-list">
-          <li>Brasserie</li>
-          <li class="dot">•</li>
-          <li>BrewLab</li>
-          <li class="dot">•</li>
-          <li>BrewShop</li>
-        </ul>
-      </div>
-
-      <div id="separator">	
-        &#11049;
-      </div>
-
-      <div class="section mailchimp">
-        <!-- Begin MailChimp Signup Form -->
-        <form action="//singe-savant.us14.list-manage.com/subscribe/post?u=999332df614031c8e90ec190c&amp;id=91d6425351" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <p id="intro-mail">Pour être prévenu des pécommandes, bons plans et évènements du Singe, filez nous votre email, on vous tient au courant :</p>
-            <div class="mc-field-group">
-              <input id="mc-email" type="email" value="" name="EMAIL" class="required email" placeholder="exemple@mail.com">
-              <input id="mc-embedded-subscribe" type="submit" value="C'est parti" name="subscribe" class="button">
             </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_999332df614031c8e90ec190c_ec486bb1c6" tabindex="-1" value=""></div>
-          
-          </div>
-        </form>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
-      </div>
 
-    </div>
-
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-75870516-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
+            <div class="row">
+                <div class="col-sm">
+                    1 of 3
+                </div>
+                <div class="col-sm">
+                    2 of 3
+                </div>
+                <div class="col-sm">
+                    3 of 3
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

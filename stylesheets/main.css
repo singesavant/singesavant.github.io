@@ -1,0 +1,199 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    margin-top: 30px;
+}
+
+/* special buttons */
+.lightning-button {
+    background-image: url('../images/bg_button_lightning.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    width: 251px;
+    height: 43px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+/* Showcase */
+.showcase {
+    background-image: url('../images/bg.png');
+}
+
+.showcase .hero {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.showcase .hero > img {
+    max-width: 70%;
+}
+
+.showcase .beer {
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.showcase .beer > img {
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+/* Showcase:: shop */
+.showcase .shop {
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.shop p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.shop > img {
+    max-width: 70%;
+}
+
+/* sidebars */
+.sidebar {
+
+}
+
+.sidebar .vert-container {
+    background-color: white;
+    height: 100%;
+    width: 35px;
+}
+
+.sidebar p {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.sidebar ul li {
+    display: inline-block;
+}
+
+#sidebar-left .vert-container {
+    float: left;
+}
+
+#sidebar-right .vert-container {
+    float: right;
+}
+
+#sidebar-left p {
+    transform:rotate(-90deg);
+}
+
+#sidebar-right ul {
+    transform:rotate(90deg);
+}
+
+/* logo */
+#main-logo {
+    margin-top: -28px;
+    margin-left: -30px;
+}
+
+/* menu */
+#menu-column {
+    text-align: center;
+}
+
+.toolbar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.toolbar li {
+    display: inline-block;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-position: bottom 20px center;
+
+    margin-right: 20px;
+}
+
+.toolbar li:last-child {
+    margin-right: 0;
+}
+
+.toolbar li > a {
+    position: relative;
+    top: 35px;
+    text-transform: uppercase;
+}
+
+#menu .home {
+    background-image: url('../images/home.png');
+}
+
+#menu .home:hover {
+    background-image: url('../images/home_active.png');
+}
+
+#menu .beers {
+    background-image: url('../images/beers.png');
+}
+
+#menu .beers:hover {
+    background-image: url('../images/beers_active.png');
+}
+
+#menu .brewery {
+    background-image: url('../images/brewery.png');
+}
+
+#menu .brewery:hover {
+    background-image: url('../images/brewery_active.png');
+}
+
+#menu .brewlab {
+    background-image: url('../images/brewlab.png');
+}
+
+#menu .brewlab:hover {
+    background-image: url('../images/brewlab_active.png');
+}
+
+#menu .recycling {
+    background-image: url('../images/recycling.png');
+}
+
+#menu .recycling:hover {
+    background-image: url('../images/recycling_active.png');
+}
+
+/* Right menu */
+#right-menu {
+    text-align: right;
+}
+
+#right-menu .shop {
+    background-image: url('../images/shop.png');
+}
+
+#right-menu .shop:hover {
+    background-image: url('../images/shop_active.png');
+}
+
