@@ -1,0 +1,18 @@
+.page-brewshop .section {
+    width: 90%;
+}
+iframe.brewshop {
+    width: 100%;
+    min-height: 250px;
+
+}
+
+.page-brewshop .container {
+    margin-top: 20px;
+}
+
+.page-brewshop h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
