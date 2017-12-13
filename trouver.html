@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="stylesheets/all.css" />
+  <link rel="stylesheet" href="stylesheets/stickers.css" />
+
+  <!-- Display -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Default Metas -->
+	<title>Où trouver nos bières ?</title>
+  <meta name="description" content="Où trouver les bières du singe">
+
+  <!-- Geocoding -->
+  <meta content="Lille, Nord" name="geo.placename" />
+  <meta content="50.629250;3.057256" name="geo.position" />
+  <meta content="FR-59" name="geo.region" />
+
+  <!-- Facebook Open Graph data -->
+  <meta property="og:title" content="Où trouver les bières du singe ?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.singe-savant.com/trouver.html" />
+  <meta property="og:image" content="http://www.singe-savant.com/images/meta-banner.jpg" />
+  <meta property="og:description" content="Les lieux à Lille où les bières du Singe Savant sont diffusées" />
+  <meta property="og:site_name" content="Le Singe Savant" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@singesavantbrew">
+  <meta name="twitter:title" content="Où trouver les bières du singe ?">
+  <meta name="twitter:description" content="Les lieux à Lille où les bières du Singe Savant sont diffusées">
+  <meta name="twitter:creator" content="@singesavantbrew">
+  <meta name="twitter:image:src" content="http://www.singe-savant.com/images/meta-banner.jpg">
+
+  <!-- Microdata / Google+ Schema.org markup -->
+  <meta itemprop="name" content="Où trouver les bières du singe ?">
+  <meta itemprop="description" content="Les lieux à Lille où les bières du Singe Savant sont diffusées">
+  <meta itemprop="image" content="http://www.singe-savant.com/images/meta-banner.jpg">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#092E41">
+  <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#092E41">
+
+  <style type="text/css">
+   a, a:visited {color: #0078A8; }
+  </style>
+</head>
+<body style="margin: 0px; padding: 0px;">
+
+    <div id="map-header">
+        <img src="images/sticker-icon.png" height="50px"></img>
+        <br/>
+        <h1>Où trouver les bières du <a href="http://www.singe-savant.com">Singe-Savant</a> ?</h1>
+        <br/>
+        <p>
+            En plus de la vente en direct brasserie, voici les lieux où trouver nos bières. Si votre lieu préféré n'y figure pas, le mieux est de demander au responsable de nous contacter !
+        </p>
+        <br/>
+        <p>
+            Il pleut ? Coup de flemme ? Vous pouvez aussi vous faire livrer, via <a href="https://www.mesvoisinsproducteurs.com/collections/bieres-et-cidres">Mes Voisins Producteurs</a> !
+        </p>
+    </div>
+
+	<div id="map" style="width: 100%; height: 100%; position: absolute;"></div>
+
+	<script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+	<script>
+		var map = L.map('map').setView([50.6330, 3.0612], 14);
+
+		L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+			attribution: '&copy; Le Singe Savant, 2016'
+		}).addTo(map);
+
+		var LeafIcon = L.Icon.extend({
+			options: {
+				iconSize:     [40, 40],
+				iconAnchor:   [20, 20],
+				popupAnchor:  [0, -20]
+			}
+		});
+
+		var stickerIcon = new LeafIcon({iconUrl: 'images/sticker-icon.png'});
+
+	 L.marker([50.623532, 3.0730003], {icon: stickerIcon}).bindPopup("<a href='https://www.facebook.com/larumeur.fr/'>La Rumeur</a> (Bar/Resto)").addTo(map);
+	 L.marker([50.626318, 3.046817], {icon: stickerIcon}).bindPopup("<a href='http://unosbar.com/'>Uno's</a> (Bar)").addTo(map);
+	 L.marker([50.639589, 3.059731], {icon: stickerIcon}).bindPopup("<a href='http://www.celestinlille.fr/'>Célestin</a> (Cave)").addTo(map);
+	 L.marker([50.639457, 3.058696], {icon: stickerIcon}).bindPopup("<a href='https://www.bellerose.fr/'>Le Bellerose</a> (Bar/resto)").addTo(map);
+	 L.marker([50.619011, 3.077805], {icon: stickerIcon}).bindPopup("<a href='http://singe-savant.com'>Brasserie du Singe Savant</a>").addTo(map);
+	 L.marker([50.629472, 3.069627], {icon: stickerIcon}).bindPopup("<a href='http://lacoroutine.org'>La Coroutine</a> (Livraison)").addTo(map);
+	 L.marker([50.639412, 3.075413], {icon: stickerIcon}).bindPopup("La <a href='https://laruchequiditoui.fr/fr/assemblies/9523'>Ruche de Lille-Europe</a> (Livraison)").addTo(map);
+	 L.marker([50.633315, 3.020232], {icon: stickerIcon}).bindPopup("La <a href='https://laruchequiditoui.fr/fr/assemblies/811'>Ruche d'Euratechnologie</a> (Livraison)").addTo(map);
+
+
+	</script>
+</body>
+</html>
+
